@@ -1,10 +1,8 @@
 # monorepo-vite
 Repository used for the talk "Monorepo: come te li aggiusto con un cacciaVite"
 
-## Organization
+## Step 1: initial situation
 
-The repository contains different branches, each with a prefix that represents the refactoring step.
+In this branch we have the initial situation: a monorepo with a UI library and the application source code.
 
-If you want to follow the proper order, here is the full list:
-
-- 1_initial_situation
+The library uses Rollup as bundler, while the application is created with create-react-app.

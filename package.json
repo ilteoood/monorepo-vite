@@ -1,0 +1,24 @@
+{
+  "name": "monorepo-vite",
+  "version": "1.0.0",
+  "description": "Repository used for the talk \"Monorepo: come te li aggiusto con un cacciaVite\"",
+  "main": "index.js",
+  "workspaces": [ "packages/*" ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilteoood/monorepo-vite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/ilteoood/monorepo-vite/issues"
+  },
+  "homepage": "https://github.com/ilteoood/monorepo-vite#readme",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
