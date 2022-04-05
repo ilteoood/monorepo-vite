@@ -1,13 +1,13 @@
 # monorepo-vite
 Repository used for the talk "Monorepo: come te li aggiusto con un cacciaVite"
 
-## Step 1: initial situation
+## Step 2: dependencies refactor
 
-In this branch we have the initial situation: a monorepo with a UI library and the application source code.
+Thanks to `rollup-plugin-visualizer`, the `ui` package is able to produce the `stats.html` file.
 
-The library uses Rollup as bundler, while the application is created with create-react-app.
+The `stats.html` file contains a graph that represents the size of each dependency.
 
-This repository has three big problems:
-- the dependencies size in the `ui` package;
-- the amount of JavaScript downloaded at app boot;
-- the build time;
+As you can see, `lodash` and `moment` are the heaviest one after `monaco-editor`.
+
+In this repo, we are going to reduce the bundle size using another library (es: `datejs`) or using a different way to import a required function `es: lodash`:
+all of keeping the initial functionalities.
