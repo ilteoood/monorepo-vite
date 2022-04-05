@@ -21,23 +21,23 @@ const rollupConfig = {
     }
   ],
   plugins: [
+    peerDepsExternal(),
     babel({
       babelHelpers: 'bundled',
       exclude: ['node_modules/**', '../../node_modules/**'],
       presets: ['@babel/env', '@babel/preset-react']
     }),
-    peerDepsExternal(),
     resolve({
       browser: true,
       extensions: ['.mjs', '.js', '.json', '.node', '.jsx']
     }),
     commonjs(),
-    monaco({
-      languages: ['dockerfile', 'json', 'markdown', 'shell', 'javascript', 'yaml']
-    }),
     postcss({
       extensions: ['.css'],
       minimize: true
+    }),
+    monaco({
+      languages: ['dockerfile', 'json', 'markdown', 'shell', 'javascript', 'yaml']
     }),
     svgr(),
     terser(),

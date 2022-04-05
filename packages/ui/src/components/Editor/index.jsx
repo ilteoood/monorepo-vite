@@ -21,6 +21,7 @@ const Editor = ({initialValue, height, language}) => {
       defaultValue={initialValue}
       editorDidMount={editorDidMount}
       editorWillMount={editorWillMount}
+      height={100}
       language={language}
       options={{
         selectOnLineNumbers: true,

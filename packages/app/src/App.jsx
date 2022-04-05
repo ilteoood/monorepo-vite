@@ -24,6 +24,7 @@ function App() {
           <Route element={<DateTimePage />} path={LINKS.DATE_TIME} />
           <Route element={<EditorPage />} path={LINKS.EDITOR} />
           <Route element={<JsonViewerPage />} path={LINKS.JSON_VIEWER} />
+          <Route element={'Select one component'} path="/"/>
         </Routes>
       </header>
     </div>
