@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react'
-import moment from 'moment'
-import {startCase} from 'lodash'
+import dayjs from 'dayjs'
+import startCase from 'lodash/startCase'
 
 const DateTime = () => {
-  const [currentTime, setCurrentTime] = useState(moment().format())
+  const [currentTime, setCurrentTime] = useState(dayjs().format())
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentTime(moment().format())
+      setCurrentTime(dayjs().format())
     })
     return () => clearInterval(interval)
   })
