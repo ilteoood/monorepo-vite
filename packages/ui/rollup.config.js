@@ -13,7 +13,8 @@ const rollupConfig = {
   output: [
     {
       dir: 'dist/cjs',
-      format: 'cjs'
+      format: 'cjs',
+      plugins: [terser()]
     },
     {
       dir: 'dist/es',
@@ -40,7 +41,6 @@ const rollupConfig = {
       languages: ['dockerfile', 'json', 'markdown', 'shell', 'javascript', 'yaml']
     }),
     svgr(),
-    terser(),
     visualizer()
   ]
 }
