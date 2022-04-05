@@ -19,13 +19,11 @@ export default defineConfig({
       output: [
         {
           dir: 'dist/cjs',
-          format: 'cjs',
-          sourcemap: false
+          format: 'cjs'
         },
         {
           dir: 'dist/es',
-          format: 'es',
-          sourcemap: false
+          format: 'es'
         }
       ],
       external: [
