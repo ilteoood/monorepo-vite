@@ -68,8 +68,9 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "react-json-view": "^1.21.3",
+    "moment": "^2.29.2",
     "monaco-editor": "^0.22.3",
+    "react-json-view": "^1.21.3",
     "react-monaco-editor": "^0.34.0"
   }
 }

@@ -1,18 +1,21 @@
 import React, {useEffect, useState} from 'react'
-import {now} from 'lodash'
+import moment from 'moment'
+import {startCase} from 'lodash'
 
 const DateTime = () => {
-  const [currentTime, setCurrentTime] = useState(now())
+  const [currentTime, setCurrentTime] = useState(moment().format())
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentTime(now())
+      setCurrentTime(moment().format())
     })
     return () => clearInterval(interval)
   })
 
   return (
-      <div>{'Milliseconds since 1 January 1970 00:00:00 UTC: '} {currentTime}</div>
+      <div>
+        {startCase('current date time: ')} {currentTime}
+      </div>
   )
 }
 
