@@ -1,12 +1,14 @@
 {
   "name": "monorepo-vite",
   "version": "1.0.0",
+  "private": true,
   "description": "Repository used for the talk \"Monorepo: come te li aggiusto con un cacciaVite\"",
   "main": "index.js",
   "workspaces": [ "packages/*" ],
   "scripts": {
-    "prepare": "npm run build -w ui",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ui": "yarn workspace ui",
+    "prepare": "yarn ui build",
+    "app": "yarn workspace app"
   },
   "repository": {
     "type": "git",
