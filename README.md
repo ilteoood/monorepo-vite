@@ -1,13 +1,8 @@
 # monorepo-vite
 Repository used for the talk "Monorepo: come te li aggiusto con un cacciaVite"
 
-## Step 2: dependencies refactor
+## Step 3: code splitting
 
-Thanks to `rollup-plugin-visualizer`, the `ui` package is able to produce the `stats.html` file.
+In this step, we are going to introduce [Code-Splitting](https://reactjs.org/docs/code-splitting.html) on React pages using `React.lazy`.
 
-The `stats.html` file contains a graph that represents the size of each dependency.
-
-As you can see, `lodash` and `moment` are the heaviest one after `monaco-editor`.
-
-In this repo, we are going to reduce the bundle size using another library (es: `datejs`) or using a different way to import a required function `es: lodash`:
-all of keeping the initial functionalities.
+This step allows use to divide our application in chunks, one for each page, and lazy-load them.
