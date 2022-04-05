@@ -6,9 +6,9 @@
   "main": "index.js",
   "workspaces": [ "packages/*" ],
   "scripts": {
-    "ui": "yarn workspace ui",
+    "ui": "yarn workspace @ilteoood/ui",
     "prepare": "yarn ui build",
-    "app": "yarn workspace app"
+    "app": "yarn workspace @ilteoood/app"
   },
   "repository": {
     "type": "git",
