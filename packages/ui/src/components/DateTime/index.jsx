@@ -12,7 +12,7 @@ const DateTime = () => {
   })
 
   return (
-      <div>{currentTime}</div>
+      <div>{'Milliseconds since 1 January 1970 00:00:00 UTC: '} {currentTime}</div>
   )
 }
 
