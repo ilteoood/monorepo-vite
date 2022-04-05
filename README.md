@@ -1,10 +1,10 @@
 # monorepo-vite
 Repository used for the talk "Monorepo: come te li aggiusto con un cacciaVite"
 
-## Step 4: Vite library
+## Step 5: Vite app
 
-This time we are going to install Vite in the UI library.
+This time we are going to install Vite in the app package.
 
-As you can see we removed lots of `devDependencies` from it (all the rollup plugins, except `rollup-plugin-visualizer`).
+This time we can remove `craco` and the `monaco-editor-webpack-plugin`.
 
-Thanks to Vite, the build time of the `ui` library has been halved.
+Even in this case, thanks to Vite, the build time of the `app` package has been halved.
