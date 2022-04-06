@@ -12,3 +12,5 @@ If you want to follow the proper order, here is the full list:
 - [3_code_splitting](https://github.com/ilteoood/monorepo-vite/tree/3_code_splitting)
 - [4_library_vite](https://github.com/ilteoood/monorepo-vite/tree/4_library_vite)
 - [5_app_vite](https://github.com/ilteoood/monorepo-vite/tree/5_app_vite)
+- [6_dynamic_import](https://github.com/ilteoood/monorepo-vite/tree/6_dynamic_import)
+- [7_plugin_legacy](https://github.com/ilteoood/monorepo-vite/tree/7_plugin_legacy)
