@@ -16,7 +16,7 @@ export default defineConfig({
     svgr(),
     visualizer(),
     legacy({
-      targets: ['defaults', 'not IE 11']
+      targets: ['defaults', 'IE 11']
     })
   ],
   server: {
