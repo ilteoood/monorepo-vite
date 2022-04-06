@@ -2,6 +2,15 @@ import React, {useCallback, useEffect} from 'react'
 
 const MonacoEditorComponent = React.lazy(() => import('react-monaco-editor'))
 
+const MONACO_OPTIONS = {
+  selectOnLineNumbers: true,
+  roundedSelection: false,
+  cursorStyle: 'line',
+  automaticLayout: true,
+  fontLigatures: true,
+  fontSize: 14
+}
+
 const Editor = ({initialValue, language}) => {
   useEffect(() => {
     import('./monaco-imports')
@@ -28,14 +37,7 @@ const Editor = ({initialValue, language}) => {
       editorWillMount={editorWillMount}
       height={100}
       language={language}
-      options={{
-        selectOnLineNumbers: true,
-        roundedSelection: false,
-        cursorStyle: 'line',
-        automaticLayout: true,
-        fontLigatures: true,
-        fontSize: 14
-      }}
+      options={MONACO_OPTIONS}
       theme="vs-dark"
     />
   )
