@@ -1,8 +1,8 @@
 # monorepo-vite
 Repository used for the talk "Monorepo: come te li aggiusto con un cacciaVite"
 
-## Step 6: Dynamic import + code splitting
+## Step 7: bonus, legacy plugin
 
-Now it's time to use the Dynamic Import + Code Splitting for our biggest UI dependency: `monaco-editor`.
+If you want to use Vite, but your target is an old browser, you can use `@vitejs/plugin-legacy`.
 
-This operation allows us to halve the initial JavaScript chunk size of each page, because `monaco-editor` now is loaded only when needed.
+This plug-in will add a `nomodule` script tag, that will load the legacy bundle only when needed.
