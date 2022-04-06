@@ -1,10 +1,8 @@
 # monorepo-vite
 Repository used for the talk "Monorepo: come te li aggiusto con un cacciaVite"
 
-## Step 5: Vite app
+## Step 6: Dynamic import + code splitting
 
-This time we are going to install Vite in the app package.
+Now it's time to use the Dynamic Import + Code Splitting for our biggest UI dependency: `monaco-editor`.
 
-This time we can remove `craco` and the `monaco-editor-webpack-plugin`.
-
-Even in this case, thanks to Vite, the build time of the `app` package has been halved.
+This operation allows us to halve the initial JavaScript chunk size of each page, because `monaco-editor` now is loaded only when needed.

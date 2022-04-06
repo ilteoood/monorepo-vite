@@ -1,9 +1,12 @@
-import React, {useCallback} from 'react'
-import MonacoEditorComponent from 'react-monaco-editor'
+import React, {useCallback, useEffect} from 'react'
 
-import './monaco-imports'
+const MonacoEditorComponent = React.lazy(() => import('react-monaco-editor'))
 
-const Editor = ({initialValue, height, language}) => {
+const Editor = ({initialValue, language}) => {
+  useEffect(() => {
+    import('./monaco-imports')
+  }, [])
+
   const editorDidMount = useCallback((editor) => {
     editor.focus()
   }, [])
