@@ -1,7 +1,7 @@
 import React, {useCallback} from 'react'
 import MonacoEditorComponent from 'react-monaco-editor'
 
-const Editor = ({initialValue, height, language}) => {
+const Editor = ({initialValue, language}) => {
   const editorDidMount = useCallback((editor) => {
     editor.focus()
   }, [])
