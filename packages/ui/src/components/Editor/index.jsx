@@ -3,7 +3,7 @@ import MonacoEditorComponent from 'react-monaco-editor'
 
 import './monaco-imports'
 
-const Editor = ({initialValue, height, language}) => {
+const Editor = ({initialValue, language}) => {
   const editorDidMount = useCallback((editor) => {
     editor.focus()
   }, [])
